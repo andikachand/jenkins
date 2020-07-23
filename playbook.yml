@@ -23,7 +23,7 @@
     when:
     - ansible_distribution == "Ubuntu"
   - name: install docker-py
-    apt:
+    pip:
       name: python-py
       state: present
     when:
